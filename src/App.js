@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Movie from './Components/Movie'
 
 function App() {
+
+  const movies = [1,2,3]
   return (
     <div className="App">
       <header className="App-header">
-       <h1>hii</h1>
+       
+     {movies.map(movie => <Movie /> )}
+
+      
       </header>
     </div>
   );
